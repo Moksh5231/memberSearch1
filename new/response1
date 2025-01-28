@@ -1,0 +1,32 @@
+{"readMembersResponse": {"members": {"member": [{
+   "restrictions": [{"restrictedAttributes": []}],
+   "person":    {
+      "nameFirst": "FREDRANIQU",
+      "nameMiddle": "R",
+      "nameLast": "AMANOWEL",
+      "namePrefix": {},
+      "nameSuffix": {},
+      "gender": "M",
+      "dateOfBirth": "1957-10-15",
+      "contacts": [      {
+         "usage": "home",
+         "postalAddresses": [         {
+            "city": "Bronx",
+            "streetLine1": "63083 BENCH COURT",
+            "state": "NY",
+            "postalCode": "10451",
+            "addressType": "home"
+         }],
+         "phonesVoice": [         {
+            "number": "2154444444",
+            "type": "Primary"
+         }]
+      }]
+   },
+   "memberIdentifier":    {
+      "idSource": "81",
+      "idValue": "300015167300",
+      "idType": "members"
+   },
+   "relationshipToSubscriber": "Self"
+}]}}}
