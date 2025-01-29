@@ -1,0 +1,689 @@
+{"readMembersResponse": {"members": {"member": [
+      {
+      "restrictions": [      {
+         "isRestrictionApplied": false,
+         "restrictedAttributes": [""]
+      }],
+      "person":       {
+         "nameFirst": "FREDRANIQU",
+         "nameMiddle": "R",
+         "nameLast": "AMANOWEL",
+         "gender": "M",
+         "dateOfBirth": "1957-10-15",
+         "contacts": [         {
+            "usage": "home",
+            "postalAddresses": [            {
+               "city": "CINCINNATI",
+               "streetLine1": "438 WEST 81ST AVENUE",
+               "state": "OH",
+               "postalCode": "45231",
+               "addressType": "home"
+            }],
+            "phonesVoice": [{"number": "513344224"}]
+         }]
+      },
+      "memberships": [      {
+         "status": "Actively Covered",
+         "effectivePeriod":          {
+            "datetimeAsOf": "2023-10-28T11:32:45",
+            "datetimeBegin": "2014-01-01T00:00:00",
+            "datetimeEnd": "2078-12-31T00:00:00"
+         },
+         "membershipIdentifier":          {
+            "idSource": "90017",
+            "idValue": "OHIQMZZ00004514082+QMXBP1005+2014-01-01",
+            "idType": "memberships"
+         },
+         "enrollment": [         {
+            "policyIdentifier":             {
+               "idSource": "20022",
+               "idValue": "OHIQMXBP1005",
+               "idType": "healthpolicies",
+               "resourceId": "20022~OHIQMXBP1005"
+            },
+            "lineOfBusinessCode": "D",
+            "policyCategory": "Medicaid",
+            "planSponsor":             {
+               "planSponsorIdentifier": {},
+               "vendor": ""
+            },
+            "planSponsorPartner":             {
+               "nameFull": "",
+               "planSponsorPartnerIdentifier":                {
+                  "idSource": "",
+                  "idValue": "",
+                  "idType": "",
+                  "resourceId": ""
+               },
+               "masterPlan":                {
+                  "masterPlanIdentifier":                   {
+                     "idSource": "",
+                     "idValue": "",
+                     "idType": "",
+                     "resourceId": ""
+                  },
+                  "masterPlanName": ""
+               }
+            }
+         }],
+         "idCardText": "00004514082"
+      }],
+      "memberIdentifier":       {
+         "idSource": "90006",
+         "idValue": "OHIQMZZ00004514082",
+         "idType": "members"
+      },
+      "relationshipToSubscriber": "Self",
+      "subscriber":       {
+         "restrictions": [         {
+            "isRestrictionApplied": false,
+            "restrictedAttributes": [""]
+         }],
+         "person":          {
+            "nameFirst": "FREDRANIQU",
+            "nameMiddle": "R",
+            "nameLast": "AMANOWEL",
+            "gender": "M",
+            "dateOfBirth": "1957-10-15",
+            "contacts": [            {
+               "usage": "home",
+               "postalAddresses": [               {
+                  "city": "CINCINNATI",
+                  "streetLine1": "438 WEST 81ST AVENUE",
+                  "state": "OH",
+                  "postalCode": "45231",
+                  "addressType": "home"
+               }],
+               "phonesVoice": [{"number": "513344224"}]
+            }]
+         },
+         "memberships": [         {
+            "status": "Actively Covered",
+            "effectivePeriod":             {
+               "datetimeAsOf": "2023-10-28T11:32:45",
+               "datetimeBegin": "2014-01-01T00:00:00",
+               "datetimeEnd": "2078-12-31T00:00:00"
+            },
+            "membershipIdentifier":             {
+               "idSource": "90017",
+               "idValue": "OHIQMZZ00004514082+QMXBP1005+2014-01-01",
+               "idType": "memberships"
+            },
+            "enrollment": [            {
+               "policyIdentifier":                {
+                  "idSource": "20022",
+                  "idValue": "OHIQMXBP1005",
+                  "idType": "healthpolicies",
+                  "resourceId": "20022~OHIQMXBP1005"
+               },
+               "lineOfBusinessCode": "D",
+               "policyCategory": "Medicaid",
+               "planSponsor":                {
+                  "planSponsorIdentifier": {},
+                  "vendor": ""
+               },
+               "planSponsorPartner":                {
+                  "nameFull": "",
+                  "planSponsorPartnerIdentifier":                   {
+                     "idSource": "",
+                     "idValue": "",
+                     "idType": "",
+                     "resourceId": ""
+                  },
+                  "masterPlan":                   {
+                     "masterPlanIdentifier":                      {
+                        "idSource": "",
+                        "idValue": "",
+                        "idType": "",
+                        "resourceId": ""
+                     },
+                     "masterPlanName": ""
+                  }
+               }
+            }],
+            "idCardText": "00004514082"
+         }],
+         "memberIdentifier":          {
+            "idSource": "90006",
+            "idValue": "OHIQMZZ00004514082",
+            "idType": "members"
+         },
+         "alternateIdentifications":          [
+                        {
+               "code": "IDTMD01",
+               "valueShort": "00004514082"
+            },
+                        {
+               "code": "IDTMD02",
+               "valueShort": "ZKEN02244122"
+            }
+         ],
+         "relationshipToSubscriber": "Self",
+         "individual": {"individualIdProxy": "PF5HXKBBDPXY"}
+      },
+      "individual": {"individualIdProxy": "PF5HXKBBDPXY"}
+   },
+      {
+      "restrictions": [      {
+         "isRestrictionApplied": false,
+         "restrictedAttributes": [""]
+      }],
+      "person":       {
+         "nameFirst": "FREDRANIQU",
+         "nameMiddle": "R",
+         "nameLast": "AMANOWEL",
+         "gender": "M",
+         "dateOfBirth": "1957-10-15",
+         "contacts": [         {
+            "postalAddresses": [            {
+               "city": "BRONX",
+               "streetLine1": "63083 BENCH COURT",
+               "state": "NY",
+               "postalCode": "10451",
+               "addressType": "Primary Residential Address"
+            }],
+            "phonesVoice": [{"number": "0000000000"}]
+         }]
+      },
+      "memberships": [      {
+         "status": "Terminated Coverage",
+         "effectivePeriod":          {
+            "datetimeBegin": "2024-01-01",
+            "datetimeEnd": "2024-12-31"
+         },
+         "membershipIdentifier":          {
+            "idSource": "5",
+            "idValue": "186203440+10+4+20240101+793761+D+4",
+            "idType": "memberships"
+         },
+         "enrollment": [         {
+            "policyIdentifier":             {
+               "idSource": "3",
+               "idValue": "793761+D+4",
+               "idType": "policies",
+               "resourceId": "3~793761+D+4"
+            },
+            "lineOfBusinessCode": "C",
+            "planSponsor":             {
+               "planSponsorId": "0000000101119726",
+               "planSponsorIdentifier":                {
+                  "idSource": "100000",
+                  "idValue": "0000000101119726",
+                  "idType": "plansponsors"
+               },
+               "nameFull": "DMT-A-RAJA-0096-01",
+               "vendor": ""
+            },
+            "planSponsorPartner":             {
+               "nameFull": "",
+               "planSponsorPartnerIdentifier":                {
+                  "idSource": "",
+                  "idValue": "",
+                  "idType": "",
+                  "resourceId": ""
+               },
+               "masterPlan":                {
+                  "masterPlanIdentifier":                   {
+                     "idSource": "",
+                     "idValue": "",
+                     "idType": "",
+                     "resourceId": ""
+                  },
+                  "masterPlanName": ""
+               }
+            }
+         }],
+         "idCardText": ""
+      }],
+      "memberIdentifier":       {
+         "idSource": "41",
+         "idValue": "186203440",
+         "idType": "members"
+      },
+      "relationshipToSubscriber": "Self",
+      "subscriber":       {
+         "restrictions": [         {
+            "isRestrictionApplied": false,
+            "restrictedAttributes": [""]
+         }],
+         "person":          {
+            "nameFirst": "FREDRANIQU",
+            "nameMiddle": "R",
+            "nameLast": "AMANOWEL",
+            "gender": "M",
+            "dateOfBirth": "1957-10-15",
+            "contacts": [            {
+               "postalAddresses": [               {
+                  "city": "BRONX",
+                  "streetLine1": "63083 BENCH COURT",
+                  "state": "NY",
+                  "postalCode": "10451",
+                  "addressType": "Primary Residential Address"
+               }],
+               "phonesVoice": [{"number": "0000000000"}]
+            }]
+         },
+         "memberships": [         {
+            "status": "Terminated Coverage",
+            "effectivePeriod":             {
+               "datetimeBegin": "2024-01-01",
+               "datetimeEnd": "2024-12-31"
+            },
+            "membershipIdentifier":             {
+               "idSource": "5",
+               "idValue": "186203440+10+4+20240101+793761+D+4",
+               "idType": "memberships"
+            },
+            "enrollment": [            {
+               "policyIdentifier":                {
+                  "idSource": "3",
+                  "idValue": "793761+D+4",
+                  "idType": "policies",
+                  "resourceId": "3~793761+D+4"
+               },
+               "lineOfBusinessCode": "C",
+               "planSponsor":                {
+                  "planSponsorId": "0000000101119726",
+                  "planSponsorIdentifier":                   {
+                     "idSource": "100000",
+                     "idValue": "0000000101119726",
+                     "idType": "plansponsors"
+                  },
+                  "nameFull": "DMT-A-RAJA-0096-01",
+                  "vendor": ""
+               },
+               "planSponsorPartner":                {
+                  "nameFull": "",
+                  "planSponsorPartnerIdentifier":                   {
+                     "idSource": "",
+                     "idValue": "",
+                     "idType": "",
+                     "resourceId": ""
+                  },
+                  "masterPlan":                   {
+                     "masterPlanIdentifier":                      {
+                        "idSource": "",
+                        "idValue": "",
+                        "idType": "",
+                        "resourceId": ""
+                     },
+                     "masterPlanName": ""
+                  }
+               }
+            }],
+            "idCardText": ""
+         }],
+         "memberIdentifier":          {
+            "idSource": "41",
+            "idValue": "186203440",
+            "idType": "members"
+         },
+         "individual": {"individualIdProxy": "PF5HXKBBDPXY"},
+         "sequenceNumber": "1"
+      },
+      "individual": {"individualIdProxy": "PF5HXKBBDPXY"},
+      "sequenceNumber": "1"
+   },
+      {
+      "restrictions": [      {
+         "isRestrictionApplied": false,
+         "restrictedAttributes": [""]
+      }],
+      "person":       {
+         "nameFirst": "FREDRANIQU",
+         "nameMiddle": "R",
+         "nameLast": "AMANOWEL",
+         "gender": "M",
+         "dateOfBirth": "1957-10-15",
+         "contacts": [         {
+            "usage": "home",
+            "postalAddresses": [            {
+               "city": "Bronx",
+               "streetLine1": "63083 BENCH COURT",
+               "state": "NY",
+               "postalCode": "10451",
+               "addressType": "home"
+            }],
+            "phonesVoice": [            {
+               "number": "2154444444",
+               "type": "Primary"
+            }]
+         }]
+      },
+      "memberships":       [
+                  {
+            "status": "Actively Covered",
+            "effectivePeriod":             {
+               "datetimeAsOf": "2024-11-01T14:05:39",
+               "datetimeBegin": "2024-10-01T00:00:00",
+               "datetimeEnd": "3000-01-01T00:00:00"
+            },
+            "membershipIdentifier":             {
+               "idSource": "59",
+               "idValue": "300015167300+Z00000000002080+2024-10-01",
+               "idType": "memberships"
+            },
+            "enrollment": [            {
+               "primaryPolicyType": "Medical",
+               "policyIdentifier":                {
+                  "idSource": "68",
+                  "idValue": "Z00000000002080",
+                  "idType": "policies",
+                  "resourceId": "68~Z00000000002080"
+               },
+               "lineOfBusinessCode": "M",
+               "policyCategory": "HMO",
+               "planSponsor":                {
+                  "planSponsorIdentifier": {},
+                  "vendor": ""
+               },
+               "planSponsorPartner":                {
+                  "nameFull": "",
+                  "planSponsorPartnerIdentifier":                   {
+                     "idSource": "",
+                     "idValue": "",
+                     "idType": "",
+                     "resourceId": ""
+                  },
+                  "masterPlan":                   {
+                     "masterPlanIdentifier":                      {
+                        "idSource": "",
+                        "idValue": "",
+                        "idType": "",
+                        "resourceId": ""
+                     },
+                     "masterPlanName": ""
+                  }
+               }
+            }],
+            "idCardText": "300015167300"
+         },
+                  {
+            "status": "Terminated Coverage",
+            "effectivePeriod":             {
+               "datetimeAsOf": "2024-11-01T14:05:39",
+               "datetimeBegin": "2024-01-01T00:00:00",
+               "datetimeEnd": "2024-09-30T00:00:00"
+            },
+            "membershipIdentifier":             {
+               "idSource": "59",
+               "idValue": "300015167300+000003-CS000006+2024-01-01",
+               "idType": "memberships"
+            },
+            "enrollment": [            {
+               "primaryPolicyType": "Medical",
+               "policyIdentifier":                {
+                  "idSource": "68",
+                  "idValue": "000003-CS000006",
+                  "idType": "policies",
+                  "resourceId": "68~000003-CS000006"
+               },
+               "lineOfBusinessCode": "M",
+               "policyCategory": "HMO",
+               "planSponsor":                {
+                  "planSponsorIdentifier": {},
+                  "vendor": ""
+               },
+               "planSponsorPartner":                {
+                  "nameFull": "",
+                  "planSponsorPartnerIdentifier":                   {
+                     "idSource": "",
+                     "idValue": "",
+                     "idType": "",
+                     "resourceId": ""
+                  },
+                  "masterPlan":                   {
+                     "masterPlanIdentifier":                      {
+                        "idSource": "",
+                        "idValue": "",
+                        "idType": "",
+                        "resourceId": ""
+                     },
+                     "masterPlanName": ""
+                  }
+               }
+            }],
+            "idCardText": "300015167300"
+         }
+      ],
+      "memberIdentifier":       {
+         "idSource": "81",
+         "idValue": "300015167300",
+         "idType": "members"
+      },
+      "alternateIdentifications":       [
+                  {
+            "code": "2",
+            "valueShort": "300015167300"
+         },
+                  {
+            "code": "IDT52",
+            "valueShort": "N00352091617"
+         },
+                  {
+            "code": "IDT53",
+            "valueShort": "610502"
+         },
+                  {
+            "code": "IDT54",
+            "valueShort": "MEDDAET"
+         },
+                  {
+            "code": "SOA",
+            "valueShort": "N"
+         },
+                  {
+            "code": "IDT62",
+            "valueShort": "H1608"
+         },
+                  {
+            "code": "IDT62",
+            "valueShort": "H3312"
+         },
+                  {
+            "code": "IDT63",
+            "valueShort": "001"
+         },
+                  {
+            "code": "IDT63",
+            "valueShort": "002"
+         },
+                  {
+            "code": "IDT49",
+            "valueShort": "RXAETD"
+         },
+                  {
+            "code": "IDT79",
+            "valueShort": "EN"
+         },
+                  {
+            "code": "MBI",
+            "valueShort": "1A51U40CR74"
+         }
+      ],
+      "relationshipToSubscriber": "Self",
+      "subscriber":       {
+         "restrictions": [         {
+            "isRestrictionApplied": false,
+            "restrictedAttributes": [""]
+         }],
+         "person":          {
+            "nameFirst": "FREDRANIQU",
+            "nameMiddle": "R",
+            "nameLast": "AMANOWEL",
+            "gender": "M",
+            "dateOfBirth": "1957-10-15",
+            "contacts": [            {
+               "usage": "home",
+               "postalAddresses": [               {
+                  "city": "Bronx",
+                  "streetLine1": "63083 BENCH COURT",
+                  "state": "NY",
+                  "postalCode": "10451",
+                  "addressType": "home"
+               }],
+               "phonesVoice": [               {
+                  "number": "2154444444",
+                  "type": "Primary"
+               }]
+            }]
+         },
+         "memberships":          [
+                        {
+               "status": "Actively Covered",
+               "effectivePeriod":                {
+                  "datetimeAsOf": "2024-11-01T14:05:39",
+                  "datetimeBegin": "2024-10-01T00:00:00",
+                  "datetimeEnd": "3000-01-01T00:00:00"
+               },
+               "membershipIdentifier":                {
+                  "idSource": "59",
+                  "idValue": "300015167300+Z00000000002080+2024-10-01",
+                  "idType": "memberships"
+               },
+               "enrollment": [               {
+                  "primaryPolicyType": "Medical",
+                  "policyIdentifier":                   {
+                     "idSource": "68",
+                     "idValue": "Z00000000002080",
+                     "idType": "policies",
+                     "resourceId": "68~Z00000000002080"
+                  },
+                  "lineOfBusinessCode": "M",
+                  "policyCategory": "HMO",
+                  "planSponsor":                   {
+                     "planSponsorIdentifier": {},
+                     "vendor": ""
+                  },
+                  "planSponsorPartner":                   {
+                     "nameFull": "",
+                     "planSponsorPartnerIdentifier":                      {
+                        "idSource": "",
+                        "idValue": "",
+                        "idType": "",
+                        "resourceId": ""
+                     },
+                     "masterPlan":                      {
+                        "masterPlanIdentifier":                         {
+                           "idSource": "",
+                           "idValue": "",
+                           "idType": "",
+                           "resourceId": ""
+                        },
+                        "masterPlanName": ""
+                     }
+                  }
+               }],
+               "idCardText": "300015167300"
+            },
+                        {
+               "status": "Terminated Coverage",
+               "effectivePeriod":                {
+                  "datetimeAsOf": "2024-11-01T14:05:39",
+                  "datetimeBegin": "2024-01-01T00:00:00",
+                  "datetimeEnd": "2024-09-30T00:00:00"
+               },
+               "membershipIdentifier":                {
+                  "idSource": "59",
+                  "idValue": "300015167300+000003-CS000006+2024-01-01",
+                  "idType": "memberships"
+               },
+               "enrollment": [               {
+                  "primaryPolicyType": "Medical",
+                  "policyIdentifier":                   {
+                     "idSource": "68",
+                     "idValue": "000003-CS000006",
+                     "idType": "policies",
+                     "resourceId": "68~000003-CS000006"
+                  },
+                  "lineOfBusinessCode": "M",
+                  "policyCategory": "HMO",
+                  "planSponsor":                   {
+                     "planSponsorIdentifier": {},
+                     "vendor": ""
+                  },
+                  "planSponsorPartner":                   {
+                     "nameFull": "",
+                     "planSponsorPartnerIdentifier":                      {
+                        "idSource": "",
+                        "idValue": "",
+                        "idType": "",
+                        "resourceId": ""
+                     },
+                     "masterPlan":                      {
+                        "masterPlanIdentifier":                         {
+                           "idSource": "",
+                           "idValue": "",
+                           "idType": "",
+                           "resourceId": ""
+                        },
+                        "masterPlanName": ""
+                     }
+                  }
+               }],
+               "idCardText": "300015167300"
+            }
+         ],
+         "memberIdentifier":          {
+            "idSource": "81",
+            "idValue": "300015167300",
+            "idType": "members"
+         },
+         "alternateIdentifications":          [
+                        {
+               "code": "2",
+               "valueShort": "300015167300"
+            },
+                        {
+               "code": "IDT52",
+               "valueShort": "N00352091617"
+            },
+                        {
+               "code": "IDT53",
+               "valueShort": "610502"
+            },
+                        {
+               "code": "IDT54",
+               "valueShort": "MEDDAET"
+            },
+                        {
+               "code": "SOA",
+               "valueShort": "N"
+            },
+                        {
+               "code": "IDT62",
+               "valueShort": "H1608"
+            },
+                        {
+               "code": "IDT62",
+               "valueShort": "H3312"
+            },
+                        {
+               "code": "IDT63",
+               "valueShort": "001"
+            },
+                        {
+               "code": "IDT63",
+               "valueShort": "002"
+            },
+                        {
+               "code": "IDT49",
+               "valueShort": "RXAETD"
+            },
+                        {
+               "code": "IDT79",
+               "valueShort": "EN"
+            },
+                        {
+               "code": "MBI",
+               "valueShort": "1A51U40CR74"
+            }
+         ],
+         "relationshipToSubscriber": "Self",
+         "individual": {"individualIdProxy": "PF5HXKBBDPXY"},
+         "sequenceNumber": "00"
+      },
+      "individual": {"individualIdProxy": "PF5HXKBBDPXY"},
+      "sequenceNumber": "00"
+   }
+]}}}
