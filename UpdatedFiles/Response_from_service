@@ -1,0 +1,678 @@
+{
+  "readMembersResponse": {
+    "members": {
+      "member": [
+        {
+          "person": {
+            "nameFirst": "DEMONTE",
+            "nameLast": "MAKEPEACE",
+            "gender": "M",
+            "dateOfBirth": "1982-10-27",
+            "contacts": [
+              {
+                "postalAddresses": [
+                  {
+                    "city": "METAIRIE",
+                    "streetLine1": "54134 IRENE DRIVE",
+                    "state": "LA",
+                    "postalCode": "70005",
+                    "addressType": "Primary Residential Address"
+                  }
+                ],
+                "phonesVoice": [
+                  {
+                    "number": "0000000000"
+                  }
+                ]
+              }
+            ]
+          },
+          "memberships": [
+            {
+              "status": "Actively Covered",
+              "effectivePeriod": {
+                "datetimeBegin": "2020-01-01",
+                "datetimeEnd": "9999-12-31"
+              },
+              "membershipIdentifier": {
+                "idSource": "5",
+                "idValue": "185487884+12+1+20200101+791601+BC+54",
+                "idType": "memberships",
+                "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+              }
+            }
+          ],
+          "memberIdentifier": {
+            "idSource": "41",
+            "idValue": "185487884",
+            "idType": "members"
+          },
+          "relationshipToSubscriber": "Self",
+          "subscriber": {
+            "person": {
+              "nameFirst": "DEMONTE",
+              "nameLast": "MAKEPEACE",
+              "gender": "M",
+              "dateOfBirth": "1982-10-27",
+              "contacts": [
+                {
+                  "postalAddresses": [
+                    {
+                      "city": "METAIRIE",
+                      "streetLine1": "54134 IRENE DRIVE",
+                      "state": "LA",
+                      "postalCode": "70005",
+                      "addressType": "Primary Residential Address"
+                    }
+                  ],
+                  "phonesVoice": [
+                    {
+                      "number": "0000000000"
+                    }
+                  ]
+                }
+              ]
+            },
+            "memberships": [
+              {
+                "status": "Actively Covered",
+                "effectivePeriod": {
+                  "datetimeBegin": "2020-01-01",
+                  "datetimeEnd": "9999-12-31"
+                },
+                "membershipIdentifier": {
+                  "idSource": "5",
+                  "idValue": "185487884+12+1+20200101+791601+BC+54",
+                  "idType": "memberships",
+                  "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                }
+              }
+            ],
+            "memberIdentifier": {
+              "idSource": "41",
+              "idValue": "185487884",
+              "idType": "members"
+            },
+            "individual": {
+              "individualIdProxy": "NLVN1BBBBPXZ"
+            },
+            "sequenceNumber": "1"
+          },
+          "dependents": [
+            {
+              "person": {
+                "nameFirst": "SHIANNE",
+                "nameLast": "MAKEPEACE",
+                "gender": "F",
+                "dateOfBirth": "1985-01-07",
+                "contacts": [
+                  {
+                    "postalAddresses": [
+                      {
+                        "city": "METAIRIE",
+                        "streetLine1": "54134 IRENE DRIVE",
+                        "state": "LA",
+                        "postalCode": "70005",
+                        "addressType": "Primary Residential Address"
+                      }
+                    ],
+                    "phonesVoice": [
+                      {
+                        "number": "0000000000"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "memberships": [
+                {
+                  "status": "Actively Covered",
+                  "effectivePeriod": {
+                    "datetimeBegin": "2020-01-01",
+                    "datetimeEnd": "9999-12-31"
+                  },
+                  "membershipIdentifier": {
+                    "idSource": "5",
+                    "idValue": "185487931+12+1+20200101+791601+BC+54",
+                    "idType": "memberships",
+                    "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                  }
+                }
+              ],
+              "memberIdentifier": {
+                "idSource": "41",
+                "idValue": "185487931",
+                "idType": "members"
+              },
+              "relationshipToSubscriber": "Spouse",
+              "individual": {
+                "individualIdProxy": "PSVN1BBBBPXZ"
+              },
+              "sequenceNumber": "2"
+            },
+            {
+              "person": {
+                "nameFirst": "CAMBRIA",
+                "nameLast": "MAKEPEACE",
+                "gender": "F",
+                "dateOfBirth": "2008-11-13",
+                "contacts": [
+                  {
+                    "postalAddresses": [
+                      {
+                        "city": "METAIRIE",
+                        "streetLine1": "54134 IRENE DRIVE",
+                        "state": "LA",
+                        "postalCode": "70005",
+                        "addressType": "Primary Residential Address"
+                      }
+                    ],
+                    "phonesVoice": [
+                      {
+                        "number": "0000000000"
+                      }
+                    ],
+                    "email": [
+                      {
+                        "address": "",
+                        "emailAddressValidFlag": "",
+                        "emailEffectivePeriod": {},
+                        "subPreference": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              "memberships": [
+                {
+                  "status": "Actively Covered",
+                  "effectivePeriod": {
+                    "datetimeBegin": "2020-01-01",
+                    "datetimeEnd": "9999-12-31"
+                  },
+                  "membershipIdentifier": {
+                    "idSource": "5",
+                    "idValue": "185487932+12+1+20200101+791601+BC+54",
+                    "idType": "memberships",
+                    "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                  }
+                }
+              ],
+              "memberIdentifier": {
+                "idSource": "41",
+                "idValue": "185487932",
+                "idType": "members"
+              },
+              "relationshipToSubscriber": "Child",
+              "individual": {
+                "individualIdProxy": "9SVN1BBBBPXZ"
+              },
+              "sequenceNumber": "3"
+            },
+            {
+              "person": {
+                "nameFirst": "KELSEY",
+                "nameLast": "MAKEPEACE",
+                "gender": "F",
+                "dateOfBirth": "2008-11-05",
+                "contacts": [
+                  {
+                    "postalAddresses": [
+                      {
+                        "city": "METAIRIE",
+                        "streetLine1": "87087 SOUTH KANAGA LOOP",
+                        "state": "LA",
+                        "postalCode": "70006",
+                        "addressType": "Primary Residential Address"
+                      }
+                    ],
+                    "phonesVoice": [
+                      {
+                        "number": "0000000000"
+                      }
+                    ],
+                    "email": [
+                      {
+                        "address": "",
+                        "emailAddressValidFlag": "",
+                        "emailEffectivePeriod": {},
+                        "subPreference": []
+                      }
+                    ]
+                  }
+                ]
+              },
+             "memberships": [
+                {
+                  "status": "Actively Covered",
+                  "effectivePeriod": {
+                    "datetimeBegin": "2020-01-01",
+                    "datetimeEnd": "9999-12-31"
+                  },
+                  "membershipIdentifier": {
+                    "idSource": "5",
+                    "idValue": "185487933+12+1+20200101+791601+BC+54",
+                    "idType": "memberships",
+                    "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                  }
+                }
+              ],
+              "memberIdentifier": {
+                "idSource": "41",
+                "idValue": "185487933",
+                "idType": "members"
+              },
+              "relationshipToSubscriber": "Child",
+              "individual": {
+                "individualIdProxy": "ZSVN1BBBBPXZ"
+              },
+              "sequenceNumber": "4"
+            },
+            {
+              "person": {
+                "nameFirst": "CATALINA",
+                "nameLast": "MAKEPEACE",
+                "gender": "F",
+                "dateOfBirth": "2010-06-11",
+                "contacts": [
+                  {
+                    "postalAddresses": [
+                      {
+                        "city": "METAIRIE",
+                        "streetLine1": "54134 IRENE DRIVE",
+                        "state": "LA",
+                        "postalCode": "70005",
+                        "addressType": "Primary Residential Address"
+                      }
+                    ],
+                    "phonesVoice": [
+                      {
+                        "number": "0000000000"
+                      }
+                    ],
+                    "email": [
+                      {
+                        "address": "",
+                        "emailAddressValidFlag": "",
+                        "emailEffectivePeriod": {},
+                        "subPreference": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              "memberships": [
+                {
+                  "status": "Actively Covered",
+                  "effectivePeriod": {
+                    "datetimeBegin": "2020-01-01",
+                    "datetimeEnd": "9999-12-31"
+                  },
+                  "membershipIdentifier": {
+                    "idSource": "5",
+                    "idValue": "185487934+12+1+20200101+791601+BC+54",
+                    "idType": "memberships",
+                    "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                  }
+                }
+              ],
+              "memberIdentifier": {
+                "idSource": "41",
+                "idValue": "185487934",
+                "idType": "members"
+              },
+              "relationshipToSubscriber": "Child",
+              "individual": {
+                "individualIdProxy": "FSVN1BBBBPXZ"
+              },
+              "sequenceNumber": "5"
+            }
+          ],
+          "individual": {
+            "individualIdProxy": "NLVN1BBBBPXZ"
+          },
+          "sequenceNumber": "1"
+        }
+      ]
+    }
+  }
+}
+{
+  "readMembersResponse": {
+    "members": {
+      "member": [
+        {
+          "person": {
+            "nameFirst": "DEMONTE",
+            "nameLast": "MAKEPEACE",
+            "gender": "M",
+            "dateOfBirth": "1982-10-27",
+            "contacts": [
+              {
+                "postalAddresses": [
+                  {
+                    "city": "METAIRIE",
+                    "streetLine1": "54134 IRENE DRIVE",
+                    "state": "LA",
+                    "postalCode": "70005",
+                    "addressType": "Primary Residential Address"
+                  }
+                ],
+                "phonesVoice": [
+                  {
+                    "number": "0000000000"
+                  }
+                ]
+              }
+            ]
+          },
+          "memberships": [
+            {
+              "status": "Actively Covered",
+              "effectivePeriod": {
+                "datetimeBegin": "2020-01-01",
+                "datetimeEnd": "9999-12-31"
+              },
+              "membershipIdentifier": {
+                "idSource": "5",
+                "idValue": "185487884+12+1+20200101+791601+BC+54",
+                "idType": "memberships",
+                "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+              }
+            }
+          ],
+          "memberIdentifier": {
+            "idSource": "41",
+            "idValue": "185487884",
+            "idType": "members"
+          },
+          "relationshipToSubscriber": "Self",
+          "subscriber": {
+            "person": {
+              "nameFirst": "DEMONTE",
+              "nameLast": "MAKEPEACE",
+              "gender": "M",
+              "dateOfBirth": "1982-10-27",
+              "contacts": [
+                {
+                  "postalAddresses": [
+                    {
+                      "city": "METAIRIE",
+                      "streetLine1": "54134 IRENE DRIVE",
+                      "state": "LA",
+                      "postalCode": "70005",
+                      "addressType": "Primary Residential Address"
+                    }
+                  ],
+                  "phonesVoice": [
+                    {
+                      "number": "0000000000"
+                    }
+                  ]
+                }
+              ]
+            },
+            "memberships": [
+              {
+                "status": "Actively Covered",
+                "effectivePeriod": {
+                  "datetimeBegin": "2020-01-01",
+                  "datetimeEnd": "9999-12-31"
+                },
+                "membershipIdentifier": {
+                  "idSource": "5",
+                  "idValue": "185487884+12+1+20200101+791601+BC+54",
+                  "idType": "memberships",
+                  "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                }
+              }
+            ],
+            "memberIdentifier": {
+              "idSource": "41",
+              "idValue": "185487884",
+              "idType": "members"
+            },
+            "individual": {
+              "individualIdProxy": "NLVN1BBBBPXZ"
+            },
+            "sequenceNumber": "1"
+          },
+          "dependents": [
+            {
+              "person": {
+                "nameFirst": "SHIANNE",
+                "nameLast": "MAKEPEACE",
+                "gender": "F",
+                "dateOfBirth": "1985-01-07",
+                "contacts": [
+                  {
+                    "postalAddresses": [
+                      {
+                        "city": "METAIRIE",
+                        "streetLine1": "54134 IRENE DRIVE",
+                        "state": "LA",
+                        "postalCode": "70005",
+                        "addressType": "Primary Residential Address"
+                      }
+                    ],
+                    "phonesVoice": [
+                      {
+                        "number": "0000000000"
+                      }
+                    ]
+                  }
+                ]
+              },
+              "memberships": [
+                {
+                  "status": "Actively Covered",
+                  "effectivePeriod": {
+                    "datetimeBegin": "2020-01-01",
+                    "datetimeEnd": "9999-12-31"
+                  },
+                  "membershipIdentifier": {
+                    "idSource": "5",
+                    "idValue": "185487931+12+1+20200101+791601+BC+54",
+                    "idType": "memberships",
+                    "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                  }
+                }
+              ],
+              "memberIdentifier": {
+                "idSource": "41",
+                "idValue": "185487931",
+                "idType": "members"
+              },
+              "relationshipToSubscriber": "Spouse",
+              "individual": {
+                "individualIdProxy": "PSVN1BBBBPXZ"
+              },
+              "sequenceNumber": "2"
+            },
+            {
+              "person": {
+                "nameFirst": "CAMBRIA",
+                "nameLast": "MAKEPEACE",
+                "gender": "F",
+                "dateOfBirth": "2008-11-13",
+                "contacts": [
+                  {
+                    "postalAddresses": [
+                      {
+                        "city": "METAIRIE",
+                        "streetLine1": "54134 IRENE DRIVE",
+                        "state": "LA",
+                        "postalCode": "70005",
+                        "addressType": "Primary Residential Address"
+                      }
+                    ],
+                    "phonesVoice": [
+                      {
+                        "number": "0000000000"
+                      }
+                    ],
+                    "email": [
+                      {
+                        "address": "",
+                        "emailAddressValidFlag": "",
+                        "emailEffectivePeriod": {},
+                        "subPreference": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              "memberships": [
+                {
+                  "status": "Actively Covered",
+                  "effectivePeriod": {
+                    "datetimeBegin": "2020-01-01",
+                    "datetimeEnd": "9999-12-31"
+                  },
+                  "membershipIdentifier": {
+                    "idSource": "5",
+                    "idValue": "185487932+12+1+20200101+791601+BC+54",
+                    "idType": "memberships",
+                    "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                  }
+                }
+              ],
+              "memberIdentifier": {
+                "idSource": "41",
+                "idValue": "185487932",
+                "idType": "members"
+              },
+              "relationshipToSubscriber": "Child",
+              "individual": {
+                "individualIdProxy": "9SVN1BBBBPXZ"
+              },
+              "sequenceNumber": "3"
+            },
+            {
+              "person": {
+                "nameFirst": "KELSEY",
+                "nameLast": "MAKEPEACE",
+                "gender": "F",
+                "dateOfBirth": "2008-11-05",
+                "contacts": [
+                  {
+                    "postalAddresses": [
+                      {
+                        "city": "METAIRIE",
+                        "streetLine1": "87087 SOUTH KANAGA LOOP",
+                        "state": "LA",
+                        "postalCode": "70006",
+                        "addressType": "Primary Residential Address"
+                      }
+                    ],
+                    "phonesVoice": [
+                      {
+                        "number": "0000000000"
+                      }
+                    ],
+                    "email": [
+                      {
+                        "address": "",
+                        "emailAddressValidFlag": "",
+                        "emailEffectivePeriod": {},
+                        "subPreference": []
+                      }
+                    ]
+                  }
+                ]
+              },
+             "memberships": [
+                {
+                  "status": "Actively Covered",
+                  "effectivePeriod": {
+                    "datetimeBegin": "2020-01-01",
+                    "datetimeEnd": "9999-12-31"
+                  },
+                  "membershipIdentifier": {
+                    "idSource": "5",
+                    "idValue": "185487933+12+1+20200101+791601+BC+54",
+                    "idType": "memberships",
+                    "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                  }
+                }
+              ],
+              "memberIdentifier": {
+                "idSource": "41",
+                "idValue": "185487933",
+                "idType": "members"
+              },
+              "relationshipToSubscriber": "Child",
+              "individual": {
+                "individualIdProxy": "ZSVN1BBBBPXZ"
+              },
+              "sequenceNumber": "4"
+            },
+            {
+              "person": {
+                "nameFirst": "CATALINA",
+                "nameLast": "MAKEPEACE",
+                "gender": "F",
+                "dateOfBirth": "2010-06-11",
+                "contacts": [
+                  {
+                    "postalAddresses": [
+                      {
+                        "city": "METAIRIE",
+                        "streetLine1": "54134 IRENE DRIVE",
+                        "state": "LA",
+                        "postalCode": "70005",
+                        "addressType": "Primary Residential Address"
+                      }
+                    ],
+                    "phonesVoice": [
+                      {
+                        "number": "0000000000"
+                      }
+                    ],
+                    "email": [
+                      {
+                        "address": "",
+                        "emailAddressValidFlag": "",
+                        "emailEffectivePeriod": {},
+                        "subPreference": []
+                      }
+                    ]
+                  }
+                ]
+              },
+              "memberships": [
+                {
+                  "status": "Actively Covered",
+                  "effectivePeriod": {
+                    "datetimeBegin": "2020-01-01",
+                    "datetimeEnd": "9999-12-31"
+                  },
+                  "membershipIdentifier": {
+                    "idSource": "5",
+                    "idValue": "185487934+12+1+20200101+791601+BC+54",
+                    "idType": "memberships",
+                    "resourceId": "5~185487884+12+1+20200101+791601+BC+54"
+                  }
+                }
+              ],
+              "memberIdentifier": {
+                "idSource": "41",
+                "idValue": "185487934",
+                "idType": "members"
+              },
+              "relationshipToSubscriber": "Child",
+              "individual": {
+                "individualIdProxy": "FSVN1BBBBPXZ"
+              },
+              "sequenceNumber": "5"
+            }
+          ],
+          "individual": {
+            "individualIdProxy": "NLVN1BBBBPXZ"
+          },
+          "sequenceNumber": "1"
+        }
+      ]
+    }
+  }
+}
