@@ -50,8 +50,50 @@ public AccountResponse getMemberById(String id, String token)
                          account.setStartDate(effectivePeriod.getDatetimeBegin());
                          account.setEndDate(effectivePeriod.getDatetimeEnd());
                      }
-                     accounts.add(account);
-                 }
+                      accounts.add(account);
+                     Subscriber sb=member.getSubsciber();
+                     if(sb!=null&& sb.getPerson()!=null){
+                         Person p1=sb.getPerson();
+                         Account ac = new Account();
+                         ac.setName(p1.getNameFirst() + " " + p1.getNameLast());
+                         ac.setDob(p1.getDateOfBirth());
+                         ac.setGender(p1.getGender());
+                         List<Memberships> ms = sb.getMemberships()!=null ? new ArrayList<>() : sb.getMemberships();
+
+                         for (Memberships m2 : ms) {
+                         MembershipIdentifier membershipIdentifier = m2.getMembershipIdentifier();
+                         membershipIdentifier.setResourceId(membershipIdentifier.getIdSource() + "~" + membershipIdentifier.getIdValue());
+                         ac.setCmmId(membershipIdentifier.getResourceId());
+                         ac.setStatus(m1.getStatus());
+                         EffectivePeriod effectivePeriod = m2.getEffectivePeriod();
+                         ac.setStartDate(effectivePeriod.getDatetimeBegin());
+                         ac.setEndDate(effectivePeriod.getDatetimeEnd());
+                           }
+                         accounts.add(ac);
+                     }
+
+                         List<Dependent> dependents=member.getDependets();
+                         for(Dependent dep : dependents){
+                         Person p1=dep.getPerson();
+                         Account ac = new Account();
+                         ac.setName(p1.getNameFirst() + " " + p1.getNameLast());
+                         ac.setDob(p1.getDateOfBirth());
+                         ac.setGender(p1.getGender());
+                         ac.setRelationshipToSubscriber(dep.getRelationshipToSubscriber());
+                         List<Memberships> ms = dep.getMemberships()!=null ? new ArrayList<>() : dep.getMemberships();
+
+                         for (Memberships m2 : ms) {
+                         MembershipIdentifier membershipIdentifier = m2.getMembershipIdentifier();
+                         membershipIdentifier.setResourceId(membershipIdentifier.getIdSource() + "~" + membershipIdentifier.getIdValue());
+                         ac.setCmmId(membershipIdentifier.getResourceId());
+                         ac.setStatus(m1.getStatus());
+                         EffectivePeriod effectivePeriod = m2.getEffectivePeriod();
+                         ac.setStartDate(effectivePeriod.getDatetimeBegin());
+                         ac.setEndDate(effectivePeriod.getDatetimeEnd());
+                           }
+                         accounts.add(ac);
+                         
+                     }
              }
          }
      }
