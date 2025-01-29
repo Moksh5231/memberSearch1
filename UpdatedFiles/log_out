@@ -1,0 +1,39 @@
+METHOD_NAME={
+} getMemberById from memberSearchController
+2025-01-29T13:25:24.301-05:00  INFO 15760 --- [radiance-onecm-membersearch] [nio-8080-exec-2] c.a.c.common.service.MemberService       : details are :Me
+mberReponseV6{readMembersResponse=ReadMembersResponse{members=Members{member=[Member{person=Person{nameFirst='SHIANNE', nameLast='MAKEPEACE', gender='F'
+, dateOfBirth='1985-01-07'}, memberships=[Memberships{status='Actively Covered', effectivePeriod=EffectivePeriod{datetimeBegin='2020-01-01', datetimeEnd
+='9999-12-31'}, membershipIdentifier=MembershipIdentifier{idSource='5', idValue='185487931+12+1+20200101+791601+BC+54', idType='memberships', resourceId
+='null'}}], memberIdentifier=MemberIdentifier{idSource='41', idValue='185487931', idType='members'}, relationshipToSubscriber='Spouse', subscriber=Subsc
+riber{person=Person{nameFirst='DEMONTE', nameLast='MAKEPEACE', gender='M', dateOfBirth='1982-10-27'}, memberships=[Memberships{status='Actively Covered'
+, effectivePeriod=EffectivePeriod{datetimeBegin='2020-01-01', datetimeEnd='9999-12-31'}, membershipIdentifier=MembershipIdentifier{idSource='5', idValue
+='185487884+12+1+20200101+791601+BC+54', idType='memberships', resourceId='null'}}]}, dependents=[Dependent{person=Person{nameFirst='SHIANNE', nameLast=
+'MAKEPEACE', gender='F', dateOfBirth='1985-01-07'}, memberIdentifier=MemberIdentifier{idSource='41', idValue='185487931', idType='members'}, memberships
+=[Memberships{status='Actively Covered', effectivePeriod=EffectivePeriod{datetimeBegin='2020-01-01', datetimeEnd='9999-12-31'}, membershipIdentifier=Mem
+bershipIdentifier{idSource='5', idValue='185487931+12+1+20200101+791601+BC+54', idType='memberships', resourceId='null'}}], relationshipToSubscriber='Sp
+ouse'}, Dependent{person=Person{nameFirst='CAMBRIA', nameLast='MAKEPEACE', gender='F', dateOfBirth='2008-11-13'}, memberIdentifier=MemberIdentifier{idSo
+urce='41', idValue='185487932', idType='members'}, memberships=[Memberships{status='Actively Covered', effectivePeriod=EffectivePeriod{datetimeBegin='20
+20-01-01', datetimeEnd='9999-12-31'}, membershipIdentifier=MembershipIdentifier{idSource='5', idValue='185487932+12+1+20200101+791601+BC+54', idType='me
+mberships', resourceId='null'}}], relationshipToSubscriber='Child'}, Dependent{person=Person{nameFirst='KELSEY', nameLast='MAKEPEACE', gender='F', dateO
+fBirth='2008-11-05'}, memberIdentifier=MemberIdentifier{idSource='41', idValue='185487933', idType='members'}, memberships=[Memberships{status='Actively
+ Covered', effectivePeriod=EffectivePeriod{datetimeBegin='2020-01-01', datetimeEnd='9999-12-31'}, membershipIdentifier=MembershipIdentifier{idSource='5'
+, idValue='185487933+12+1+20200101+791601+BC+54', idType='memberships', resourceId='null'}}], relationshipToSubscriber='Child'}, Dependent{person=Person
+{nameFirst='CATALINA', nameLast='MAKEPEACE', gender='F', dateOfBirth='2010-06-11'}, memberIdentifier=MemberIdentifier{idSource='41', idValue='185487934'
+, idType='members'}, memberships=[Memberships{status='Actively Covered', effectivePeriod=EffectivePeriod{datetimeBegin='2020-01-01', datetimeEnd='9999-1
+2-31'}, membershipIdentifier=MembershipIdentifier{idSource='5', idValue='185487934+12+1+20200101+791601+BC+54', idType='memberships', resourceId='null'}
+}], relationshipToSubscriber='Child'}]}]}}}
+2025-01-29T13:25:24.576-05:00  INFO 15760 --- [radiance-onecm-membersearch] [nio-8080-exec-2] c.a.c.common.service.MemberService       : dependent info[
+Dependent{person=Person{nameFirst='SHIANNE', nameLast='MAKEPEACE', gender='F', dateOfBirth='1985-01-07'}, memberIdentifier=MemberIdentifier{idSource='41
+', idValue='185487931', idType='members'}, memberships=[Memberships{status='Actively Covered', effectivePeriod=EffectivePeriod{datetimeBegin='2020-01-01
+', datetimeEnd='9999-12-31'}, membershipIdentifier=MembershipIdentifier{idSource='5', idValue='185487931+12+1+20200101+791601+BC+54', idType='membership
+s', resourceId='null'}}], relationshipToSubscriber='Spouse'}, Dependent{person=Person{nameFirst='CAMBRIA', nameLast='MAKEPEACE', gender='F', dateOfBirth
+='2008-11-13'}, memberIdentifier=MemberIdentifier{idSource='41', idValue='185487932', idType='members'}, memberships=[Memberships{status='Actively Cover
+ed', effectivePeriod=EffectivePeriod{datetimeBegin='2020-01-01', datetimeEnd='9999-12-31'}, membershipIdentifier=MembershipIdentifier{idSource='5', idVa
+lue='185487932+12+1+20200101+791601+BC+54', idType='memberships', resourceId='null'}}], relationshipToSubscriber='Child'}, Dependent{person=Person{nameF
+irst='KELSEY', nameLast='MAKEPEACE', gender='F', dateOfBirth='2008-11-05'}, memberIdentifier=MemberIdentifier{idSource='41', idValue='185487933', idType
+='members'}, memberships=[Memberships{status='Actively Covered', effectivePeriod=EffectivePeriod{datetimeBegin='2020-01-01', datetimeEnd='9999-12-31'}, 
+membershipIdentifier=MembershipIdentifier{idSource='5', idValue='185487933+12+1+20200101+791601+BC+54', idType='memberships', resourceId='null'}}], rela
+tionshipToSubscriber='Child'}, Dependent{person=Person{nameFirst='CATALINA', nameLast='MAKEPEACE', gender='F', dateOfBirth='2010-06-11'}, memberIdentifi
+er=MemberIdentifier{idSource='41', idValue='185487934', idType='members'}, memberships=[Memberships{status='Actively Covered', effectivePeriod=Effective
+Period{datetimeBegin='2020-01-01', datetimeEnd='9999-12-31'}, membershipIdentifier=MembershipIdentifier{idSource='5', idValue='185487934+12+1+20200101+7
+91601+BC+54', idType='memberships', resourceId='null'}}], relationshipToSubscriber='Child'}]
