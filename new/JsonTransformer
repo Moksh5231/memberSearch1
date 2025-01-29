@@ -1,0 +1,75 @@
+package com.example.memberservice;
+
+import com.example.memberservice.model.Member;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+public class JsonTransformer {
+    public static void main(String[] args) throws Exception {
+        ObjectMapper objectMapper = new ObjectMapper();
+        JsonNode rootNode = objectMapper.readTree(new File("V6Member_memberwithSpouseandchild 1.json"));
+        JsonNode membersNode = rootNode.path("readMembersResponse").path("members").path("member");
+
+        List<ObjectNode> accounts = new ArrayList<>();
+
+        for (JsonNode memberNode : membersNode) {
+            Member member = objectMapper.treeToValue(memberNode, Member.class);
+
+            // Process subscriber
+            if ("41".equals(member.getMemberIdentifier().getIdSource())) {
+                if (member.getSubscriber() != null) {
+                    processMember(accounts, member.getSubscriber().getPerson(), member.getMemberships());
+                }
+
+                // Process dependents
+                if (member.getDependents() != null) {
+                    for (Dependent dependent : member.getDependents()) {
+                        processMember(accounts, dependent.getPerson(), dependent.getMembershipIdentifier());
+                    }
+                }
+            }
+        }
+
+        // Prepare final output
+        ObjectNode output = objectMapper.createObjectNode();
+        output.set("accounts", objectMapper.valueToTree(accounts));
+
+        // Print the output to console or save to file
+        System.out.println(objectMapper.writerWithDefaultPrettyPrinter().writeValueAsString(output));
+    }
+
+    private static void processMember(List<ObjectNode> accounts, Person person, List<Membership> memberships) {
+        if (memberships != null && !memberships.isEmpty()) {
+            // Extract details
+            String cmmId = memberships.get(0).getMembershipIdentifier().getResourceId(); // Adjust based on your logic
+            String name = person.getNameFirst() + " " + person.getNameLast();
+            String dob = person.getDateOfBirth(); // Format as needed
+
+            ObjectNode account = accounts.addObject();
+            account.put("CMMid", cmmId);
+            account.put("name", name);
+            account.put("DOB", dob != null ? dob : "");
+            account.put("Status", memberships.get(0).getStatus() != null ? memberships.get(0).getStatus() : "");
+            account.put("Gender", person.getGender() != null ? person.getGender() : "");
+            account.put("StartDate", "");
+            account.put("EndDate", "");
+        }
+    }
+
+    private static void processMember(List<ObjectNode> accounts, Person person, MembershipIdentifier membershipIdentifier) {
+        ObjectNode account = accounts.addObject();
+        account.put("CMMid", membershipIdentifier.getResourceId());
+        account.put("name", person.getNameFirst() + " " + person.getNameLast());
+        account.put("DOB", "");
+        account.put("Status", "");
+        account.put("Gender", "");
+        account.put("StartDate", "");
+        account.put("EndDate", "");
+    }
+}
