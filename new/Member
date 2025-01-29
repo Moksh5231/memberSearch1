@@ -1,0 +1,24 @@
+package com.example.memberservice.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+import java.util.List;
+
+@Data
+public class Member {
+    @JsonProperty("memberIdentifier")
+    private MemberIdentifier memberIdentifier;
+
+    @JsonProperty("person")
+    private Person person;
+
+    @JsonProperty("memberships")
+    private List<Membership> memberships;
+
+    @JsonProperty("dependents")
+    private List<Dependent> dependents;
+
+    @JsonProperty("subscriber")
+    private Subscriber subscriber;
+}
