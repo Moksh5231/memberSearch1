@@ -1,0 +1,31 @@
+{
+  "accounts": [
+    {
+      "CMMid": "59~300015394400+Z00000000004270+2024-10-01",
+      "name": "John does",
+      "DOB": "12/10/1992",
+      "Status": "Active",
+      "Gender": "M ",
+      "StartDate": "",
+      "EndDate": ""
+    },
+    {
+      "CMMid": "59~300015394400+Z00000000004270+2024-10-01",
+      "name": "John wife",
+      "DOB": "",
+      "Status": "",
+      "Gender": "",
+      "StartDate": "",
+      "EndDate": ""
+    },
+    {
+      "CMMid": "59~300015394400+Z00000000004270+2024-10-01",
+      "name": "John child",
+      "DOB": "",
+      "Status": "",
+      "Gender": "",
+      "StartDate": "",
+      "EndDate": ""
+    }
+  ]
+}
