@@ -1,0 +1,13 @@
+package com.example.memberservice.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+@Data
+public class Dependent {
+    @JsonProperty("person")
+    private Person person;
+
+    @JsonProperty("memberIdentifier")
+    private MemberIdentifier memberIdentifier;
+}
