@@ -1,0 +1,28 @@
+package com.example.memberservice.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+@Data
+public class Account {
+    @JsonProperty("CMMid")
+    private String cmmId;
+
+    @JsonProperty("name")
+    private String name;
+
+    @JsonProperty("DOB")
+    private String dob;
+
+    @JsonProperty("Status")
+    private String status;
+
+    @JsonProperty("Gender")
+    private String gender;
+
+    @JsonProperty("StartDate")
+    private String startDate;
+
+    @JsonProperty("EndDate")
+    private String endDate;
+}
