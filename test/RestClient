@@ -1,0 +1,62 @@
+package com.aetna.clinical.common.client;
+
+import com.aetna.clinical.common.util.Constants;
+import com.aetna.clinical.common.dto.mappers.MemberReponseV6;
+import com.aetna.clinical.common.util.GenericHelper;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestClient;
+
+import com.aetna.clinical.common.dto.mappers.ReadMembersResponse;
+
+public class MemberClient {
+
+    private final RestClient restClient;
+
+    @Autowired
+    private GenericHelper genericHelper;
+
+    @Autowired
+    private static Logger logger = LoggerFactory.getLogger(MemberClient.class);
+    public MemberClient() {
+        restClient = RestClient.builder()
+                .baseUrl("https://qaapi01.aetna.com")
+                .build();
+
+
+    }
+
+    public ResponseEntity<MemberReponseV6> getMemberById(String memberId, String token) {
+        String pathVariable = "healthcare/qapath1/hcb/v6/members";
+      //  String token1 = genericHelper.buildHttpHeader("TESTING", Constants.TOKEN_SCOPE_PUBLIC_NONPII);
+      //  logger.info("token value is :" +token1 );
+      //  logger.info("token value is :" +token 1);
+
+
+        //String token = "Bearer AAIkMTFkZTYwZGQtMTU3MS00ZDc5LTk2MzMtMzUwMjM2Y2M1MzJie6EcpwxF5I7eewvDIe9BWsdDHwbH7fryllpUbm_utWH9wSrZAe_qGwxVE846PyZPhfmTfy1pybQ3kuXOKKPyiAc3k321l0ZU6goKBWcuF7z7NuLpzgbLfPF1KojYMt7luAxyQBh0FF1vHy9l29AuMg";
+        ResponseEntity<MemberReponseV6> response = restClient.get()
+                .uri(uriBuilder -> uriBuilder
+                        .path("/" + pathVariable)
+                        .queryParam("memberId", memberId)
+                        .queryParam("token",token)
+                        .queryParam("responseExpansionLevel", "Expanded")
+                        .queryParam("fromDate","2022-01-18")
+                        .queryParam("toDate", "2025-07-19")
+                        .queryParam("voidedCoverageRequiredInd","Y")
+                        .queryParam("needCommPrefAttributes","Y")
+                        .queryParam("psRequiredInd","Y")
+                        .queryParam("validHSAMemberships","Y")
+                        .queryParam("medicaidInd","Y")
+                        .queryParam("individualLevelSearchInd","Y")
+                        .build())
+                .header("Content-Type", "application/json")
+                .header("Authorization", token)
+                .retrieve()
+                .toEntity(MemberReponseV6.class);
+
+        return response;
+    }
+
+}
