@@ -1,0 +1,46 @@
+package com.aetna.clinical.common.service;
+
+import com.aetna.clinical.common.dto.mappers.Member;
+import com.aetna.clinical.common.dto.mappers.MemberReponseV6;
+import com.aetna.clinical.common.dto.mappers.MembershipIdentifier;
+import com.aetna.clinical.common.dto.mappers.Memberships;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.aetna.clinical.common.client.MemberClient;
+
+import java.util.List;
+
+@Service
+public class MemberService {
+
+    @Autowired
+    private MemberClient memberClient;
+
+    private static Logger logger = LoggerFactory.getLogger(MemberService.class);
+public MemberReponseV6 getMemberById(String id, String token)
+{
+
+   // System.out.println(memberClient.getMemberById(id, token));
+    logger.info( "details are :"
+            + memberClient.getMemberById(id,token).getBody());
+     MemberReponseV6 memberReponseV6 =  memberClient.getMemberById(id,token).getBody();
+
+     if(memberReponseV6.getReadMembersResponse()!= null){
+         if(memberReponseV6.getReadMembersResponse().getMembers()!=null && memberReponseV6.getReadMembersResponse().getMembers().getMember()!=null && !memberReponseV6.getReadMembersResponse().getMembers().getMember().isEmpty()){
+             Member member = memberReponseV6.getReadMembersResponse().getMembers().getMember().get(0);
+             List<Memberships> memberships = member.getMemberships();
+             for(Memberships m1: memberships){
+                 MembershipIdentifier membershipIdentifier = m1.getMembershipIdentifier();
+                 membershipIdentifier.setResourceId(membershipIdentifier.getIdSource()+"~"+membershipIdentifier.getIdValue());
+             }
+         }
+     }
+     return memberReponseV6;
+}
+
+}
+
