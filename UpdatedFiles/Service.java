@@ -69,7 +69,7 @@ public class MemberService {
                                 ac.setStartDate(effectivePeriod.getDatetimeBegin());
                                 ac.setEndDate(effectivePeriod.getDatetimeEnd());
                             }
-                            accounts.add(ac);
+                           // accounts.add(ac);
                         }
 
                         List<Dependent> dependents = member.getDependents();
@@ -93,7 +93,6 @@ public class MemberService {
                                     ac.setEndDate(effectivePeriod.getDatetimeEnd());
                                 }
                                 accounts.add(ac);
-
                             }
                         }
                     }
