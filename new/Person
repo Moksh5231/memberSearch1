@@ -1,0 +1,19 @@
+package com.example.memberservice.model;
+
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
+
+@Data
+public class Person {
+    @JsonProperty("nameFirst")
+    private String nameFirst;
+
+    @JsonProperty("nameLast")
+    private String nameLast;
+
+    @JsonProperty("dateOfBirth")
+    private String dateOfBirth; // Use LocalDate if preferred
+
+    @JsonProperty("gender")
+    private String gender;
+}
