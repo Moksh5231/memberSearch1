@@ -1,0 +1,29 @@
+accounts account (array)
+if members ->member->[]->1
+foreach(Member mem in members.member)
+{
+ 
+	MemberIdentifier memberIdentifier = mem.getMember();
+	if(idosur =41)
+	{
+		if(mem.subscriper.count>0)
+		{
+			String cmmid = memberships.
+			String name =person.get
+			account.add(cmmid);
+		a.add(account);
+		}
+		if(mem.depends.count>0)
+		{
+		for()
+		{
+			String cmmid = memberships.
+			String name =person.get
+			account.add(cmmid);
+		a.add(account);
+		}	
+		}
+	}
+
+ 
+}
