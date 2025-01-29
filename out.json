@@ -1,0 +1,15 @@
+ details are :Me
+mberReponseV6{readMembersResponse=ReadMembersResponse{members=Members{member=[Member{person=Person{nameFirst='FREDRANIQU', nameLast='AMANOWEL', gender='
+M', dateOfBirth='1957-10-15'}, memberships=[Memberships{status='Actively Covered', effectivePeriod=EffectivePeriod{datetimeBegin='2014-01-01T00:00:00', 
+datetimeEnd='2078-12-31T00:00:00'}, membershipIdentifier=MembershipIdentifier{idSource='90017', idValue='OHIQMZZ00004514082+QMXBP1005+2014-01-01', idTyp
+e='memberships', resourceId='null'}}], memberIdentifier=MemberIdentifier{idSource='90006', idValue='OHIQMZZ00004514082', idType='members'}, relationship
+ToSubscriber='Self'}, Member{person=Person{nameFirst='FREDRANIQU', nameLast='AMANOWEL', gender='M', dateOfBirth='1957-10-15'}, memberships=[Memberships{
+status='Terminated Coverage', effectivePeriod=EffectivePeriod{datetimeBegin='2024-01-01', datetimeEnd='2024-12-31'}, membershipIdentifier=MembershipIden
+tifier{idSource='5', idValue='186203440+10+4+20240101+793761+D+4', idType='memberships', resourceId='null'}}], memberIdentifier=MemberIdentifier{idSourc
+e='41', idValue='186203440', idType='members'}, relationshipToSubscriber='Self'}, Member{person=Person{nameFirst='FREDRANIQU', nameLast='AMANOWEL', gend
+er='M', dateOfBirth='1957-10-15'}, memberships=[Memberships{status='Actively Covered', effectivePeriod=EffectivePeriod{datetimeBegin='2024-10-01T00:00:0
+0', datetimeEnd='3000-01-01T00:00:00'}, membershipIdentifier=MembershipIdentifier{idSource='59', idValue='300015167300+Z00000000002080+2024-10-01', idTy
+pe='memberships', resourceId='null'}}, Memberships{status='Terminated Coverage', effectivePeriod=EffectivePeriod{datetimeBegin='2024-01-01T00:00:00', da
+tetimeEnd='2024-09-30T00:00:00'}, membershipIdentifier=MembershipIdentifier{idSource='59', idValue='300015167300+000003-CS000006+2024-01-01', idType='me
+mberships', resourceId='null'}}], memberIdentifier=MemberIdentifier{idSource='81', idValue='300015167300', idType='members'}, relationshipToSubscriber='
+Self'}]}}}
