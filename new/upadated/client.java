@@ -88,13 +88,23 @@ public class MemberClient {
         ResponseEntity<MemberReponseV6> response = null;
         try {
         String pathVariable = "healthcare/qapath1/hcb/v6/members";
+        String queryParm = "?";
+        if(fName!=null){
+            queryParm = queryParm+"nameFirst=" + fName;
+        }
+        if(lName!=null){
+            queryParm = queryParm+"nameLast=" + lName;
+        }
+        if(dob!=null){
+            queryParm = queryParm+"dateOfBirth=" + dob;
+        }
         // String token1 = String.valueOf(memberHelper.buildMembersHttpHeader());
         HttpHeaders httpHeaders = memberHelper.buildMembersHttpHeader();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
         HttpEntity<String> membersEntity = new HttpEntity<String>(httpHeaders);
         logger.info("token value is :" + httpHeaders);
         String membersServiceUrl = "&responseExpansionLevel=Expanded&fromDate=2022-01-24&toDate=2025-10-25&voidedCoverageRequiredInd=Y&needCommPrefAttributes=Y&psRequiredInd=Y&validHSAMemberships=Y&individualLevelSearchInd=Y&medicaidInd=Y";
-        finalMembersServiceApicUrl = "https://qaapi01.int.aetna.com/healthcare/qapath1/hcb/at/v6/members?nameFirst=" + fName +"&nameLast="+ lName + "&dateOfBirth=" +dob+membersServiceUrl;
+        finalMembersServiceApicUrl = "https://qaapi01.int.aetna.com/healthcare/qapath1/hcb/at/v6/members"+queryParm+membersServiceUrl;
         logger.info("URL:" + finalMembersServiceApicUrl);
         response = restTemplate.exchange(finalMembersServiceApicUrl, HttpMethod.GET, membersEntity, MemberReponseV6.class);
         }
