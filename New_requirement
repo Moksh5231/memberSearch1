@@ -1,0 +1,58 @@
+  "allOrNone": true, - HC
+  "collateSubrequests": true,- HC
+  "compositeRequest": [
+    {
+      "url": "/services/data/v62.0/sobjects/Account/Proxy_ID__c/15~12346",(15~12346-> from another API) (you i'll get proxyid from the MemberService "individual->individualIdProxy" ex: (NLVN1BBBBPXZ)
+      "body": {
+        "LastName": "PRICH hello", - V6 membership
+        "RecordType": {
+          "Name": "Person Account" - HC
+        },
+        "PersonBirthdate": "1990-09-09",- V6 membership
+        "PersonGenderIdentity": "Male" - V6 membership
+      },
+      "method": "PATCH", - HC
+      "referenceId": "reference_id_account_1" -HC
+    },
+    {
+      "url": "/services/data/v62.0/sobjects/PurchaserPlan/Policy_Resource_ID__c/3~797686+ED+2",(3~797686+ED+2 -> v6 membershipResponse->enrollment->policyIdentifier->resourceId
+      "body": {
+        "Name": "Medical~PPO", (v3healthpolicy - primaryPolicyType~policyName)
+		"RecordType": {
+          "Name": "CEC Purchaser Plan" - (v3healthpolicy - policyIdentifier.idType)
+        },
+        "Plan_Sponsor_Name__c": "VIRT ROYAL CHALLENGERS", (health policy/ policyName
+        "Plan_Sponsor_Unique_Id_PSUID__c": "100000~0000000091666349",     healthpolicy/ policyIdentifier/idsource~idvalue
+        "Membership_Organization_Type__c": "Licensed",   policyCategory
+        "Membership_OrganizationNameFull__c": "Banner | Aetna",   healthpolicy parentOrganization/typeCode~namefull
+        "Policy_Name__c": "Open Access Aetna Select",   healthpolicy/ policySubCategory
+        "PayerId": "@{reference_id_account_1.id}", -HC
+        "Account_Structure_Level_1__c": "797686",   organizationArrangementIdentifier/idValue
+        "Account_Structure_Level_2__c": "10"    organizationArrangementIdentifier/idsource
+      },
+      "method": "PATCH", - HC
+      "referenceId": "reference_id_purchaserplan_1" -HC
+    },
+    {
+      "url": "/services/data/v62.0/sobjects/MemberPlan/CMM_External_Id__c/5~264599278+10+4+20211201+797686+ED+4",        v6memberships/ membershipIdentifier/ resourceId
+      "body": {
+        "Name": "264599278",     V6Memberships/ membershipDetail/ memberId
+        "RecordType": {
+          "Name": "Commercial" -HC
+        },
+        "MemberId": "@{reference_id_account_1.id}",
+        "SubscriberId": "@{reference_id_account_1.id}",
+        "Status": "Active",  V6Memberships/ membershipDetail/status
+        "Member_Cumb_Id__c": "264599278",   V6Memberships/ membershipDetail/ memberId
+        "Line_Of_Business__c": "C",      v6memberships /lineOfBusinessCode
+        "CMM_Id_Value__c": "264599278+10+4+20211201+797686+ED+1",    v6memberships/ membershipIdentifier/ idValue
+        "EffectiveFrom": "2001-12-01",  V6Memberships/effectivePeriod/datetimeBegin
+        "EffectiveTo": "3000-12-31",   V6Memberships/effectivePeriod/datetimeEnd
+        "RelationshipToSubscriber": "Self",   relationshipToSubscriber
+        "PlanId": "@{reference_id_purchaserplan_1.id}"
+      },
+      "method": "PATCH",
+      "referenceId": "reference_id_MemberPlan_1"
+    }
+  ]
+}
