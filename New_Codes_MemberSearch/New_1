@@ -5,31 +5,37 @@ pom.xml
     <dependency>
         <groupId>net.serenity-bdd</groupId>
         <artifactId>serenity-core</artifactId>
-        <version>2.4.34</version>
+        <version>3.3.0</version>
     </dependency>
     <dependency>
         <groupId>net.serenity-bdd</groupId>
         <artifactId>serenity-junit</artifactId>
-        <version>2.4.34</version>
+        <version>3.3.0</version>
     </dependency>
     <dependency>
         <groupId>net.serenity-bdd</groupId>
         <artifactId>serenity-rest-assured</artifactId>
-        <version>2.4.34</version>
+        <version>3.3.0</version>
     </dependency>
     <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.13.1</version>
+        <version>4.13.2</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- RestAssured dependency -->
+    <dependency>
+        <groupId>io.rest-assured</groupId>
+        <artifactId>rest-assured</artifactId>
+        <version>4.4.0</version>
         <scope>test</scope>
     </dependency>
 </dependencies>
-
 --------------------
 
 @controllertest
 --------------
-package com.aetna.clinical.controller;
+package com.aetna.clinical.web.tests;
 
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
@@ -37,6 +43,7 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.core.annotations.Title;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -48,65 +55,76 @@ import java.util.Map;
 @RunWith(SerenityRunner.class)
 public class MemberSearchControllerTest {
 
+    private static final String BASE_URL = "http://localhost:8080"; // Update with your server URL
+
     @Before
     public void setUp() {
-        RestAssured.baseURI = "http://localhost:8080"; // Update with your server URL
+        RestAssured.baseURI = BASE_URL;
     }
 
     @Test
-    public void testConnectionToSf() {
-        Response response = SerenityRest.given()
+    @Title("Test the POST /memberSearch API")
+    public void testPostMemberSearch() {
+        Map<String, Object> response = SerenityRest.given()
                 .contentType("application/json")
                 .when()
-                .post("/memberSearch");
+                .post("/memberSearch")
+                .then()
+                .statusCode(200)
+                .extract()
+                .as(Map.class);
 
-        Assert.assertEquals(200, response.getStatusCode());
-
-        Map<String, Object> responseBody = response.getBody().as(Map.class);
-        Assert.assertEquals("success", responseBody.get("status"));
-        Assert.assertEquals("Hello World", responseBody.get("message"));
+        Assert.assertEquals("success", response.get("status"));
+        Assert.assertEquals("Hello World", response.get("message"));
     }
 
     @Test
+    @Title("Test the GET /memberSearch API with memberId")
     public void testGetMemberById() {
         Response response = SerenityRest.given()
-                .contentType("application/json")
                 .queryParam("memberId", "12345")
                 .when()
-                .get("/memberSearch");
+                .get("/memberSearch")
+                .then()
+                .statusCode(200)
+                .extract()
+                .response();
 
-        Assert.assertEquals(200, response.getStatusCode());
-
-        // Add more assertions based on the expected response structure
+        Assert.assertNotNull(response.getBody().asString());
     }
 
     @Test
+    @Title("Test the GET /memberSearch API with name and date of birth")
     public void testGetMemberByNameAndDob() {
         Response response = SerenityRest.given()
-                .contentType("application/json")
                 .queryParam("nameFirst", "John")
                 .queryParam("nameLast", "Doe")
-                .queryParam("dateOfBirth", "1980-01-01")
+                .queryParam("dateOfBirth", "1990-01-01")
                 .when()
-                .get("/memberSearch");
+                .get("/memberSearch")
+                .then()
+                .statusCode(200)
+                .extract()
+                .response();
 
-        Assert.assertEquals(200, response.getStatusCode());
-
-        // Add more assertions based on the expected response structure
+        Assert.assertNotNull(response.getBody().asString());
     }
 
     @Test
+    @Title("Test the GET /memberSearch API with phone number")
     public void testGetMemberByPhoneNumber() {
         Response response = SerenityRest.given()
-                .contentType("application/json")
                 .queryParam("phoneNumber", "1234567890")
                 .when()
-                .get("/memberSearch");
+                .get("/memberSearch")
+                .then()
+                .statusCode(200)
+                .extract()
+                .response();
 
-        Assert.assertEquals(200, response.getStatusCode());
-
-        // Add more assertions based on the expected response structure
+        Assert.assertNotNull(response.getBody().asString());
     }
 }
-
 --------------------------------
+
+mvn clean verify
