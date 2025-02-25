@@ -1,0 +1,59 @@
+<dependencies>
+    <dependency>
+        <groupId>net.serenity-bdd</groupId>
+        <artifactId>serenity-rest-assured</artifactId>
+        <version>${serenity.version}</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- Add other dependencies as necessary -->
+</dependencies>
+
+---------------------
+package starter.web;
+
+import net.serenitybdd.junit5.SerenityJUnit5Extension;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import io.restassured.http.ContentType;
+
+import static net.serenitybdd.rest.SerenityRest.given;
+import static org.hamcrest.Matchers.equalTo;
+
+@ExtendWith(SerenityJUnit5Extension.class)
+public class MemberSearchControllerTest {
+
+    @Test
+    public void testPostConnection() {
+        given()
+            .baseUri("http://localhost:8080") // Adjust based on your server configuration
+            .basePath("/memberSearch")
+            .contentType(ContentType.JSON)
+        .when()
+            .post()
+        .then()
+            .statusCode(200)
+            .body("status", equalTo("success"))
+            .body("message", equalTo("Hello World"));
+    }
+
+    @Test
+    public void testGetMemberById() {
+        given()
+            .baseUri("http://localhost:8080") // Adjust as necessary
+            .basePath("/memberSearch")
+            .queryParam("memberId", "123")
+            .queryParam("nameFirst", "John")
+            .queryParam("nameLast", "Doe")
+            .queryParam("dateOfBirth", "1990-01-01")
+            .queryParam("phoneNumber", "555-1234")
+            .accept(ContentType.JSON)
+        .when()
+            .get()
+        .then()
+            .statusCode(200)
+            .body("status", equalTo("success")); // Adjust based on actual response structure
+    }
+}
+
+-----------------
+mvn clean verify
